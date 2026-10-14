@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#E8EEF2">
+  <title>练食 · 个人健身记录</title>
+  <link rel="icon" type="image/png" href="/web/logo.png">
+  <link rel="stylesheet" href="/web/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <img class="brand-mark" src="/web/logo.png" width="44" height="44" alt="">
+      <div class="brand-copy"><strong>练食</strong><small>练得明白，吃得有数</small></div>
+      <button class="topbar-action" type="button" data-view="profile" aria-label="打开个人设置">设置</button>
+    </header>
+    <main id="app-main" tabindex="-1"></main>
+    <nav class="bottom-nav" aria-label="主导航">
+      <button type="button" data-view="home" class="active"><span class="nav-icon home-icon" aria-hidden="true"></span><span>今天</span></button>
+      <button type="button" data-view="workout"><span class="nav-icon workout-icon" aria-hidden="true"></span><span>训练</span></button>
+      <button type="button" data-view="meal"><span class="nav-icon meal-icon" aria-hidden="true"></span><span>记一餐</span></button>
+      <button type="button" data-view="history"><span class="nav-icon history-icon" aria-hidden="true"></span><span>记录</span></button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/shared/core.js"></script>
+  <script src="/shared/local-backup.js"></script>
+  <script src="/shared/exercise-energy.js"></script>
+  <script src="/web/dish-catalog.js"></script>
+  <script src="/web/model-gateway.js"></script>
+  <script src="/web/app.js"></script>
+</body>
+</html>

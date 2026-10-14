@@ -1,0 +1,1 @@
+{ "desc": "个人记录原型", "rules": [{ "action": "allow", "page": "*" }] }

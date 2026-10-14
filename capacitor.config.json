@@ -1,0 +1,8 @@
+{
+  "appId": "com.fitday.lianshi",
+  "appName": "练食",
+  "webDir": "dist",
+  "plugins": {
+    "CapacitorHttp": { "enabled": true }
+  }
+}

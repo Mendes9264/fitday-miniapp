@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练食 App Icon 预览</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #2E7D32;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .preview-item {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 12px;
+            transition: transform 0.2s;
+        }
+        .preview-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .preview-item img {
+            display: block;
+            margin: 0 auto 15px;
+            border-radius: 20%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .preview-item .label {
+            font-weight: 600;
+            color: #2E7D32;
+            margin-bottom: 5px;
+        }
+        .preview-item .size {
+            font-size: 14px;
+            color: #666;
+        }
+        .design-info {
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .design-info h2 {
+            color: #2E7D32;
+            margin-top: 0;
+        }
+        .design-info ul {
+            line-height: 1.8;
+        }
+        .sizes-needed {
+            background: #fff3e0;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #FF6B35;
+        }
+        .sizes-needed h2 {
+            color: #F7931E;
+            margin-top: 0;
+        }
+        .sizes-needed code {
+            background: #ffe0b2;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+        .command-box {
+            background: #263238;
+            color: #aed581;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>练食 (FitDay) App Icon</h1>
+        <p class="subtitle">健身训练 + 饮食营养管理</p>
+
+        <div class="preview-grid">
+            <div class="preview-item">
+                <img src="app-icon.svg" width="192" height="192" alt="App Icon Large">
+                <div class="label">大图标</div>
+                <div class="size">192x192</div>
+            </div>
+            <div class="preview-item">
+                <img src="app-icon.svg" width="144" height="144" alt="App Icon Medium">
+                <div class="label">中图标</div>
+                <div class="size">144x144</div>
+            </div>
+            <div class="preview-item">
+                <img src="app-icon.svg" width="96" height="96" alt="App Icon Small">
+                <div class="label">小图标</div>
+                <div class="size">96x96</div>
+            </div>
+            <div class="preview-item">
+                <img src="app-icon.svg" width="48" height="48" alt="App Icon Tiny">
+                <div class="label">迷你图标</div>
+                <div class="size">48x48</div>
+            </div>
+        </div>
+
+        <div class="design-info">
+            <h2>🎨 设计说明</h2>
+            <ul>
+                <li><strong>哑铃图标（左侧）</strong>：代表力量训练，每周四次健身房锻炼</li>
+                <li><strong>碗与筷子（右侧）</strong>：代表中餐饮食追踪和营养估算</li>
+                <li><strong>加号连接</strong>：象征"练"与"食"的结合，体现app核心理念</li>
+                <li><strong>绿色渐变背景</strong>：健康、活力、自然的色调</li>
+                <li><strong>橙色点缀</strong>：食物、能量、热情的视觉元素</li>
+                <li><strong>底部"练食"文字</strong>：清晰的app名称标识</li>
+            </ul>
+        </div>
+
+        <div class="sizes-needed">
+            <h2>📱 需要的图标尺寸</h2>
+
+            <h3>Android 应用</h3>
+            <p>需要将 SVG 转换为以下 PNG 尺寸，放置在相应目录：</p>
+            <ul>
+                <li><code>mipmap-mdpi/ic_launcher.png</code> - 48x48</li>
+                <li><code>mipmap-hdpi/ic_launcher.png</code> - 72x72</li>
+                <li><code>mipmap-xhdpi/ic_launcher.png</code> - 96x96</li>
+                <li><code>mipmap-xxhdpi/ic_launcher.png</code> - 144x144</li>
+                <li><code>mipmap-xxxhdpi/ic_launcher.png</code> - 192x192</li>
+            </ul>
+
+            <h3>Web 应用</h3>
+            <ul>
+                <li><code>favicon.ico</code> - 16x16, 32x32, 48x48 (多尺寸ICO)</li>
+                <li><code>icon-192.png</code> - 192x192 (PWA)</li>
+                <li><code>icon-512.png</code> - 512x512 (PWA)</li>
+                <li><code>apple-touch-icon.png</code> - 180x180 (iOS)</li>
+            </ul>
+
+            <h3>转换命令（需要安装工具）</h3>
+
+            <p><strong>方法1：使用在线工具</strong></p>
+            <p>访问以下网站上传 <code>app-icon.svg</code>：</p>
+            <ul>
+                <li><a href="https://cloudconvert.com/svg-to-png" target="_blank">CloudConvert</a></li>
+                <li><a href="https://convertio.co/zh/svg-png/" target="_blank">Convertio</a></li>
+                <li><a href="https://www.aconvert.com/cn/image/svg-to-png/" target="_blank">Aconvert</a></li>
+            </ul>
+
+            <p><strong>方法2：使用 ImageMagick（命令行）</strong></p>
+            <div class="command-box">
+# 安装 ImageMagick for Windows<br>
+# 下载: https://imagemagick.org/script/download.php#windows<br>
+<br>
+# 生成各种尺寸<br>
+magick app-icon.svg -resize 48x48 icon-48.png<br>
+magick app-icon.svg -resize 72x72 icon-72.png<br>
+magick app-icon.svg -resize 96x96 icon-96.png<br>
+magick app-icon.svg -resize 144x144 icon-144.png<br>
+magick app-icon.svg -resize 192x192 icon-192.png<br>
+magick app-icon.svg -resize 512x512 icon-512.png
+            </div>
+
+            <p><strong>方法3：使用 Inkscape（免费图形软件）</strong></p>
+            <div class="command-box">
+# 下载安装 Inkscape: https://inkscape.org/zh-hans/<br>
+<br>
+# 打开 app-icon.svg<br>
+# 文件 → 导出PNG图像<br>
+# 设置所需尺寸后导出
+            </div>
+        </div>
+
+        <div class="design-info">
+            <h2>🔄 备用设计建议</h2>
+            <p>如果您想要不同的风格，可以考虑：</p>
+            <ul>
+                <li><strong>极简版</strong>：只保留哑铃和碗的剪影，去掉文字</li>
+                <li><strong>圆形版</strong>：将所有元素放入圆形边框内</li>
+                <li><strong>单色版</strong>：使用纯色背景，白色图标元素</li>
+                <li><strong>渐变优化</strong>：调整颜色方案以适配不同主题</li>
+            </ul>
+            <p>如需调整设计，请告诉我具体需求！</p>
+        </div>
+    </div>
+</body>
+</html>

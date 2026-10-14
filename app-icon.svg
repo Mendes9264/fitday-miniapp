@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7931E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGradient)"/>
+
+  <!-- Dumbbell icon (fitness) - left side -->
+  <g transform="translate(100, 180)">
+    <!-- Left weight plate -->
+    <rect x="0" y="20" width="30" height="80" rx="8" fill="#ffffff"/>
+    <rect x="10" y="30" width="10" height="60" rx="3" fill="url(#accentGradient)"/>
+
+    <!-- Left handle connector -->
+    <rect x="30" y="50" width="25" height="20" rx="4" fill="#ffffff"/>
+
+    <!-- Center bar -->
+    <rect x="55" y="53" width="80" height="14" rx="7" fill="#ffffff"/>
+
+    <!-- Right handle connector -->
+    <rect x="135" y="50" width="25" height="20" rx="4" fill="#ffffff"/>
+
+    <!-- Right weight plate -->
+    <rect x="160" y="20" width="30" height="80" rx="8" fill="#ffffff"/>
+    <rect x="170" y="30" width="10" height="60" rx="3" fill="url(#accentGradient)"/>
+  </g>
+
+  <!-- Bowl/plate icon (nutrition) - right side -->
+  <g transform="translate(280, 195)">
+    <!-- Bowl -->
+    <ellipse cx="60" cy="35" rx="55" ry="12" fill="#ffffff" opacity="0.3"/>
+    <path d="M 5 35 Q 5 85 60 95 Q 115 85 115 35 Z" fill="#ffffff"/>
+
+    <!-- Food items in bowl -->
+    <!-- Rice/grain base -->
+    <ellipse cx="60" cy="45" rx="40" ry="8" fill="url(#accentGradient)" opacity="0.8"/>
+
+    <!-- Chopsticks crossing over bowl -->
+    <g transform="rotate(-20, 60, 30)">
+      <rect x="20" y="28" width="80" height="4" rx="2" fill="#F7931E"/>
+      <rect x="20" y="28" width="4" height="4" rx="2" fill="#ffffff"/>
+    </g>
+    <g transform="rotate(20, 60, 30)">
+      <rect x="20" y="28" width="80" height="4" rx="2" fill="#FF6B35"/>
+      <rect x="20" y="28" width="4" height="4" rx="2" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- Plus sign connector in the middle -->
+  <g transform="translate(256, 246)">
+    <circle r="22" fill="#ffffff" opacity="0.95"/>
+    <rect x="-12" y="-3" width="24" height="6" rx="3" fill="url(#accentGradient)"/>
+    <rect x="-3" y="-12" width="6" height="24" rx="3" fill="url(#accentGradient)"/>
+  </g>
+
+  <!-- App name badge at bottom -->
+  <g transform="translate(256, 420)">
+    <rect x="-80" y="-25" width="160" height="50" rx="25" fill="#ffffff" opacity="0.25"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">练食</text>
+  </g>
+</svg>

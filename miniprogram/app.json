@@ -1,0 +1,6 @@
+{
+  "pages": ["pages/index/index"],
+  "window": { "navigationBarTitleText": "练食", "navigationBarBackgroundColor": "#E9EFF7", "navigationBarTextStyle": "black", "backgroundColor": "#F3F5F8" },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

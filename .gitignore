@@ -1,0 +1,24 @@
+node_modules/
+dist/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+.build-tools/
+
+# Personal data, local secrets and signing material
+项目对话总结.md
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pem
+*.apk
+*.aab
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,9 @@
+{
+  "description": "练食 · 个人健身记录原型",
+  "packOptions": { "ignore": [] },
+  "setting": { "urlCheck": false, "es6": true, "enhance": true, "postcss": true, "minified": false },
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "fitday-miniapp",
+  "miniprogramRoot": "miniprogram/"
+}
